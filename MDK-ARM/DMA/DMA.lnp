@@ -1,10 +1,10 @@
 --cpu Cortex-M3
 "dma\startup_stm32f103xb.o"
-"dma\ad5940main.o"
 "dma\ad5940.o"
 "dma\bodyimpedance.o"
 "dma\amperometric.o"
 "dma\portf103cn0510.o"
+"dma\ad5940function.o"
 "dma\main.o"
 "dma\gpio.o"
 "dma\dma.o"
@@ -29,6 +29,7 @@
 "dma\stm32f1xx_hal_tim_ex.o"
 "dma\stm32f1xx_hal_uart.o"
 "dma\system_stm32f1xx.o"
+"dma\impedance.o"
 --library_type=microlib --strict --scatter "DMA\DMA.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

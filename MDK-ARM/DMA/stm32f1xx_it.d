@@ -32,3 +32,7 @@ dma\stm32f1xx_it.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 dma\stm32f1xx_it.o: ../Core/Inc/stm32f1xx_it.h
 dma\stm32f1xx_it.o: ../Core/Inc/usart.h
 dma\stm32f1xx_it.o: ../Core/Inc/PortF103Cn0510.h
+dma\stm32f1xx_it.o: ../Core/Inc/AD5940.h
+dma\stm32f1xx_it.o: D:\Program Files\keil5\ARM\ARMCC\Bin\..\include\math.h
+dma\stm32f1xx_it.o: D:\Program Files\keil5\ARM\ARMCC\Bin\..\include\string.h
+dma\stm32f1xx_it.o: D:\Program Files\keil5\ARM\ARMCC\Bin\..\include\stdio.h

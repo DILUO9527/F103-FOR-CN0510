@@ -50,7 +50,6 @@ uint32_t AD5940_GetMCUIntFlag(void) {
 }
 
 uint32_t AD5940_ClrMCUIntFlag(void) {
-    __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_0); // 清除 EXTI0 中断标志
     ucInterrupted = 0; // 清除软件中断标志
   return 1;
 }

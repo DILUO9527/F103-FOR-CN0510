@@ -40,3 +40,4 @@ dma\main.o: ../Core/Inc/ad5940.h
 dma\main.o: D:\Program Files\keil5\ARM\ARMCC\Bin\..\include\math.h
 dma\main.o: D:\Program Files\keil5\ARM\ARMCC\Bin\..\include\string.h
 dma\main.o: D:\Program Files\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+dma\main.o: ../Core/Inc/AD5940Function.h

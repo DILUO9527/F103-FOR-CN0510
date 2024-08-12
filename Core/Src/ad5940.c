@@ -3017,7 +3017,7 @@ void AD5940_HWReset(void)
 }
 
 /**
- * @} MISC_Block_Functions
+ * @} MIfSC_Block_Functions
  * @} MISC_Block
 */
 

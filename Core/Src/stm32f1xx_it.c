@@ -15,6 +15,8 @@
   *
   ******************************************************************************
   */
+  
+
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
@@ -24,6 +26,7 @@
 /* USER CODE BEGIN Includes */
 #include "usart.h"
 #include "PortF103Cn0510.h"
+#include "AD5940.h"
 extern uint8_t aRxBuffer[RXBUFFERSIZE];//HAL库使用的串口接收缓冲
 extern volatile uint8_t ucInterrupted;
 
@@ -206,20 +209,17 @@ void SysTick_Handler(void)
 /******************************************************************************/
 
 /**
-  * @brief This function handles EXTI line0 interrupt.
+  * @brief This function handles EXTI line1 interrupt.
   */
-void EXTI0_IRQHandler(void)
+void EXTI1_IRQHandler(void)
 {
-  /* USER CODE BEGIN EXTI0_IRQn 0 */
-   ucInterrupted = 1; // 设置中断标志
-  /* USER CODE END EXTI0_IRQn 0 */
-  HAL_GPIO_EXTI_IRQHandler(exti_Pin);
-  /* USER CODE BEGIN EXTI0_IRQn 1 */
-  
+  /* USER CODE BEGIN EXTI1_IRQn 0 */
+ucInterrupted=1;
+  /* USER CODE END EXTI1_IRQn 0 */
+  HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_1);
+  /* USER CODE BEGIN EXTI1_IRQn 1 */
 
-  
-  
-  /* USER CODE END EXTI0_IRQn 1 */
+  /* USER CODE END EXTI1_IRQn 1 */
 }
 
 /**

@@ -134,11 +134,11 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>4107</DriverSelection>
+            <DriverSelection>4101</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>STLink\ST-LINKIII-KEIL_SWO.dll</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -395,11 +395,6 @@
           <GroupName>Application/User/Core</GroupName>
           <Files>
             <File>
-              <FileName>AD5940Main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Core\Src\AD5940Main.c</FilePath>
-            </File>
-            <File>
               <FileName>ad5940.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Core\Src\ad5940.c</FilePath>
@@ -418,6 +413,11 @@
               <FileName>PortF103Cn0510.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Core\Src\PortF103Cn0510.c</FilePath>
+            </File>
+            <File>
+              <FileName>AD5940Function.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\AD5940Function.c</FilePath>
             </File>
             <File>
               <FileName>main.c</FileName>
@@ -701,6 +701,16 @@
               <FileName>system_stm32f1xx.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/system_stm32f1xx.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>function</GroupName>
+          <Files>
+            <File>
+              <FileName>Impedance.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\function\Impedance.c</FilePath>
             </File>
           </Files>
         </Group>
